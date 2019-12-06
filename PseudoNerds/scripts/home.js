@@ -3,3 +3,4 @@ function GetHeader(){
 var header = "Apparel";
 $("#btnNavHeader").text(header);
 }
+
