@@ -5,39 +5,48 @@
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
     <title>Kool GenZ</title>
     <script src="scripts/jquery-3.4.1.min.js"></script>
-    <script src ="scripts/home.js"></script>
-    <script src ="stylesheets/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
-    <link rel = "stylesheet" type="text/css" href="stylesheets/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <script src="scripts/home.js"></script>
+    <script src="stylesheets/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap-4.4.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/fontawesome-free-5.11.2-web/less/fontawesome.less">
     <link rel="stylesheet" type="text/css" href="stylesheets/home.less">
 
 </head>
 
-<body>
-        <!-- <iframe id = "iframe_id" src="nav.html" width="100%"></iframe> -->
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+<body onload="GetHeader();">
+    <!-- <iframe id = "iframe_id" src="nav.html" width="100%"></iframe> -->
+    <div class="container-fluid">
+        <div class="row">
+        <div class="col-sm-12">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">KoolGenZ</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <div class="dropdown">
-                            <button class="btn btn-secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Dropdown button
-                            </button>
-                            <div class="dropdown-menu hide" aria-labelledby="dropdownMenuButton">
-                              <a class="dropdown-item" href="#">Action</a>
-                              <a class="dropdown-item" href="#">Another action</a>
-                              <a class="dropdown-item" href="#">Something else here</a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button id="btnNavHeader" class="dropbtn"></button>
+                                <div class="dropdown-content">
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                </div>
                             </div>
-                          </div>
-                    </li>
-                  </ul>
+                        </li>
+                    </ul>
                 </div>
-              </nav>
+                <div>
+                    <label class="navbar-brand" for="searchBar">Search</label>
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input type="text" id="searchBar">
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
 </body>
 
 </html>

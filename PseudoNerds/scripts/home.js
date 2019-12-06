@@ -1,8 +1,5 @@
-$(document).ready(function(){
-    $('#dropdownMenuButton').onmouseover(function() {
-      $(this).find(".dropdown-menu").removeClass('hide');
-    });
-    $('#dropdownMenuButton').onmouseout(function() {
-        $(this).find(".dropdown-menu").addClass('hide');
-    });  
-});
+function GetHeader(){
+//enter api method to get the header data//
+var header = "Apparel";
+$("#btnNavHeader").text(header);
+}
