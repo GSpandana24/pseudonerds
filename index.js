@@ -13,7 +13,7 @@ app.use(express.static(__dirname + '/PseudoNerds/home.html'));
 //Store all HTML files in view folder.
 app.use(express.static(__dirname + '/PseudoNerds/scripts'));
 //Store all JS and CSS in Scripts folder.
-app.use(express.static(__dirname + '/PseudoNerds/stylesheets/home.css'));
+app.use(express.static(__dirname + '/PseudoNerds/stylesheets'));
 //Store all  CSS in stylesheets folder.
 
 var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
