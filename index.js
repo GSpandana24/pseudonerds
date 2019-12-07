@@ -4,16 +4,16 @@ const path = require('path');
 const router = express.Router();
 
 router.get('/',function(req,res){
-  res.sendFile(path.join(__dirname+'PseudoNerds/home.html'));
+  res.sendFile(path.join(__dirname+'/PseudoNerds/home.html'));
   //__dirname : It will resolve to your project folder.
 });
 
 //add the router
-app.use(express.static(__dirname + 'PseudoNerds/home.html'));
+app.use(express.static(__dirname + '/PseudoNerds/home.html'));
 //Store all HTML files in view folder.
-app.use(express.static(__dirname + 'PseudoNerds/scripts'));
+app.use(express.static(__dirname + '/PseudoNerds/scripts'));
 //Store all JS and CSS in Scripts folder.
-app.use(express.static(__dirname + 'PseudoNerds/stylesheets'));
+app.use(express.static(__dirname + '/PseudoNerds/stylesheets'));
 //Store all  CSS in stylesheets folder.
 
 var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
