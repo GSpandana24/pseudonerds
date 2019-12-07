@@ -18,10 +18,10 @@
   },
   "homepage": "https://github.com/ShwethaP24/pseudonerds#readme",
   "dependencies": {
+    "jquery": "^3.4.1",
     "bootstrap": "^4.4.1",
     "express": "^4.17.1",
-    "jquery": "^3.4.1",
-    "popper.js": "^1.16.0",
-    "FortAwesome/Font-Awesome": "5.11.2"
+    "FortAwesome/Font-Awesome": "^5.11.2",
+    "popper.js": "^1.16.0"
   }
 }
