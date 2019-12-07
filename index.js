@@ -16,7 +16,10 @@ app.use(express.static(__dirname + '/scripts'));
 app.use(express.static(__dirname + '/stylesheets'));
 //Store all  CSS in stylesheets folder.
 
-app.use('/', router);
-app.listen(process.env.port || 8080);
+var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
+    ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
 
-console.log('Running at Port 8080');
+app.use('/', router);
+app.listen(port, ip);
+
+
