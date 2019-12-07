@@ -1,2 +1,0 @@
-# pseudonerds
-pseudonerds container crush
