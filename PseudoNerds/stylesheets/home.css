@@ -38,3 +38,30 @@ body{
   .col-sm-12 {
       padding:0px;
   }
+
+
+
+  .carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 40%;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 70px;
+    font-family: Monotype Corsiva;
+    vertical-align: middle !important;
+  }
+
+  #divCategoryCarousel{
+    padding-top:30px;
+    padding-left:10px;
+    padding-right:10px;
+  }
+
+  .bg-dark{
+    background-color: black !important;
+  }
